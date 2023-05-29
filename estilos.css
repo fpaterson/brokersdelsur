@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* Primero hago los estilos para mobile acá*/
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#titulo {
+    text-align: center;
+}
+
+/*HEADER*/
+header {
+    background-color: white;
+}
+
+.arriba {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    padding-left: 5%;
+}
+
+.marca {
+    padding-left: 16px;
+    margin-top: 0;
+    padding-bottom: 15px;
+}
+
+.marca h1 {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.marca h2 {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+}
+
+
+.marca h1,
+.marca h2 {
+    color: #1E480D;
+}
+
+.encabezado {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.iconos {
+    width: 100%;
+}
+
+
+.barra ul li {
+    display: inline;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+.iconos {
+    text-align: center;
+}
+
+.iconos img {
+    height: 20px;
+}
+
+/*pasarlo arriba cuando todo el menú tenga a*/
+.barra ul li a {
+    text-decoration: none;
+}
+
+/*HERO*/
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+/*SLOGAN*/
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 330px;   
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.slogan h2{
+    font-size: 3vh;
+}
+
+/*PROYECTOS*/
+
+.proyectos {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E480D;
+    text-align: center;
+    min-height: 220px;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyectos h2,
+.proyectos h3 {
+    color: white;
+}
+
+.proyecto {
+    padding-top: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.proyecto.ultimo {
+    padding-bottom: 20px;
+}
+
+.proyecto img {
+    width: 100%;
+    height: auto;
+}
+
+.proyecto_texto p {
+    position: absolute;
+    top: 60%;
+    color: #fff;
+    align-items: center;
+    
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #FCFCF4;
+    text-align: center;
+}
+
+footer img {
+    padding-top: 40px;
+    width: 35px;
+}
+
+
+/*-------------------PÁGINA "MARCO LEGAL"---------------------------------------------*/
+
+.texto {
+    padding: 25px;
+    background-color: #FCFCF4;
+}
+
+.texto h3 {
+    text-align: center;
+}
+
+.texto_2 {
+    padding-top: 30px;
+}
+
+
+/*VIDEO*/
+
+.video {
+    text-align: center;
+}
+
+.video iframe {
+    max-width: 90%;
+}
+
+/*----------3 breakpoints, 2 media queries---------------------------*/
+
+/* para tablets*/
+@media (min-width: 576px) {
+
+    .encabezado {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    /*tengo que estudiar qué hace esto*/
+    .iconos,
+    .barra {
+        flex: 1;       
+    }
+
+    .iconos {
+        padding-top: 20px;
+        padding-right: 15px;
+        text-align: end;
+    }
+
+    .slogan h2{
+        font-size: 50px;
+    }
+
+    .logo img {
+        padding-left: 10%;
+    }
+
+
+
+}
+
+
+/*para desktop*/
+@media (min-width: 992px) {}
