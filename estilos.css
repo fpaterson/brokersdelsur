@@ -139,12 +139,20 @@ header {
 
 .proyecto_texto p {
     position: absolute;
-    top: 60%;
+    width: 100%;
+    text-align: center;
+    bottom: 20%;
     color: #fff;
-    align-items: center;
-    
+    font-size:x-large;
+    font-weight:bold;
 }
 
+.proyecto_texto button {
+    position: absolute;
+    width: 30%;
+    
+    bottom: 10%;
+}
 
 
 /*FOOTER*/
