@@ -31,26 +31,28 @@ header {
 }
 
 .marca {
-    padding-left: 16px;
+    padding-left: 8px;
     margin-top: 0;
     padding-bottom: 15px;
 }
 
-.marca h1 {
+.marca #titulo {
     padding-top: 15px;
     padding-bottom: 0px;
     margin-bottom: 0px;
+    font-size: 4.5vh;
+    font-weight: 700;
+    text-align: left;
 }
 
-.marca h2 {
+.marca #slogan {
     padding-top: 0px;
     padding-bottom: 10px;
     margin-top: 0px;
+    font-size: 2.7vh;
 }
 
-
-.marca h1,
-.marca h2 {
+.marca p {
     color: #1E480D;
 }
 
@@ -101,11 +103,12 @@ header {
     padding-bottom: 20px;
 }
 
-.slogan h2{
-    font-size: 3vh;
+.slogan h1{
+    font-size: 5vh;
+    padding-top: 10px;
 }
 
-/*PROYECTOS*/
+/*dDV PROYECTOS*/
 
 .proyectos {
     display: flex;
@@ -118,10 +121,12 @@ header {
 }
 
 .proyectos h2,
-.proyectos h3 {
+.proyectos p {
     color: white;
 }
 
+
+/*PROYECTOS INDIVIDUALES*/
 .proyecto {
     padding-top: 20px;
     position: relative;
@@ -137,7 +142,7 @@ header {
     height: auto;
 }
 
-.proyecto_texto p {
+.proyecto_texto h3 {
     position: absolute;
     width: 100%;
     text-align: center;
@@ -145,12 +150,12 @@ header {
     color: #fff;
     font-size:x-large;
     font-weight:bold;
+    font-size: 16px;
 }
 
 .proyecto_texto button {
     position: absolute;
     width: 30%;
-    
     bottom: 10%;
 }
 
@@ -223,7 +228,9 @@ footer img {
     .logo img {
         padding-left: 10%;
     }
-
+    .proyecto_texto h3 {
+        font-size: 30px;
+    }
 
 
 }
