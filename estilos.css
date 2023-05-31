@@ -130,11 +130,7 @@ header {
 .proyecto {
     padding-top: 20px;
     position: relative;
-    display: inline-block;
-}
-
-.proyecto.ultimo {
-    padding-bottom: 20px;
+    display: block;
 }
 
 .proyecto img {
@@ -151,12 +147,25 @@ header {
     font-size:x-large;
     font-weight:bold;
     font-size: 16px;
+    display: inline;
+    background-color: black;
 }
+
+
 
 .proyecto_texto button {
     position: absolute;
     width: 30%;
     bottom: 10%;
+    left: 35%;
+    background-color: olivedrab;
+    border-radius: 10%;
+    font-size: 16px;
+    min-height: 30px;
+}
+
+.proyecto_texto button a {
+    color: #FCFCF4;
 }
 
 
@@ -165,6 +174,7 @@ header {
 footer {
     background-color: #FCFCF4;
     text-align: center;
+    padding-top: 20px;
 }
 
 footer img {
