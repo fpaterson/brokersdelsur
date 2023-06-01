@@ -156,19 +156,30 @@ header {
     color: #fff;
     font-weight:bold;
     font-size: 16px;
-    display: inline;
+    display: block;
     background-color: black;
+    /*Ah ok, in that case you don't want to text-align:center; (which occurs within the element) 
+    you want to center the element itself. Firstly go back to max-width to get the black
+     background the right size again.Then add margin-left:50%; which will move it left halfway 
+     across the screen, and transform:translateX(-50%); which pulls it back by half its own 
+     width, so it ends up centered.*/
+    margin-left:50%;
+    transform:translateX(-50%);
 }
+
+
 
 .proyecto_texto button {
     position: absolute;
-    width: 30%;
+    width: 40%;
     bottom: 10%;
-    left: 35%;
-    background-color: olivedrab;
-    border-radius: 20%;
+    background-color: #153608;
+    border-radius: 5%;
     font-size: 16px;
+    font-weight:900;
     min-height: 30px;
+    margin-left:50%;
+    transform:translateX(-50%);
 }
 
 .proyecto_texto button a {
@@ -250,7 +261,7 @@ footer img {
     }
 
     .proyecto_texto button {
-       
+        width: 20%;
         min-height: 50px;
     }
   
