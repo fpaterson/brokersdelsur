@@ -191,7 +191,6 @@ header {
     font-family: Arial;
     font-size: 16px;
     font-weight:900;
-    text-decoration: none;
     text-shadow: 0px 1px 0px #854629;
     position: absolute;
     width: 40%;
@@ -227,6 +226,7 @@ header {
 
 .proyecto_texto button a {
     color: #FCFCF4;
+    text-decoration: none;
 }
 
 
