@@ -224,6 +224,37 @@ header {
 }
 
 
+/* PÁGINAS DE LOS PROYECTOS*/
+
+.texto-proyecto-individual {
+    font-size: 16px;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: justify;
+}
+
+.texto-proyecto-individual h2, h3 {
+    text-align: center;
+}
+
+.texto-proyecto-individual ul {
+    text-align:left;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa iframe {
+    width: 95%;
+    height: 300px;
+}
+
+
+
 /*FOOTER*/
 
 footer {
@@ -304,6 +335,11 @@ footer img {
   
     .slogan p {
         font-size: 25px;
+    }
+
+    .mapa iframe {
+        width: 50%;
+        height: 500px;
     }
     
 }
