@@ -254,6 +254,18 @@ header {
     height: 300px;
 }
 
+.video-proyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-proyecto iframe {
+    width: 95%;
+    height: 300px;
+}
+
 
 
 /*FOOTER*/
@@ -339,6 +351,13 @@ footer img {
     }
 
     .mapa iframe {
+        padding-top: 15px;
+        width: 50%;
+        height: 500px;
+    }
+
+    .video-proyecto iframe {
+        padding-top: 15px;
         width: 50%;
         height: 500px;
     }
