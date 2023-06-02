@@ -1,20 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 /* Primero hago los estilos para mobile acá*/
+html {
+    overflow: auto;
+}
 
-
-html, body {
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #FCFCF4;
-
 }
 
-body {
-    overflow: overlay;
- }
+header, div {
+    overflow: auto;
+}
+
 
 #titulo {
     text-align: center;
