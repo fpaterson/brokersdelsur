@@ -3,16 +3,15 @@
 /* Primero hago los estilos para mobile acá*/
 html {
     overflow-y: scroll;
+    
 }
 
 body {
-    box-sizing: border-box;
+    box-sizing: border-box;   
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
-
 
 
 #titulo {
@@ -27,6 +26,7 @@ header {
 .arriba {
     display: flex;
     align-items: center;
+    width: auto;
 }
 
 .logo img {
@@ -37,6 +37,7 @@ header {
 
 .logo {
     overflow: hidden;
+    
 }
 
 .marca {
@@ -260,7 +261,7 @@ header {
 }
 
 .mapa iframe {
-    width: 95%;
+    width: auto;
     height: 300px;
 }
 
@@ -278,7 +279,8 @@ header {
 
 table {
     width: 95%;
-    font-size: 13px;  
+    font-size: 13px; 
+    margin: auto;
 }
 
 th, td {
@@ -391,6 +393,11 @@ footer img {
         width: 50%;
         font-size: 16px;  
         margin: auto;
+        text-align: center;
+    }
+
+    th, td {
+        text-align: center;
     }
 
     
