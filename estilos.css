@@ -2,17 +2,15 @@
 
 /* Primero hago los estilos para mobile acá*/
 html {
-    overflow-y: scroll;
-    
+    overflow:scroll;
 }
 
 body {
     box-sizing: border-box;   
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif; 
 }
-
 
 #titulo {
     text-align: center;
@@ -30,18 +28,17 @@ header {
 }
 
 .logo img {
-    width: 100px;
+    width: 100%;
     height: auto;
     padding-left: 5%;
 }
 
 .logo {
-    overflow: hidden;
-    
+    width: 30%;
 }
 
 .marca {
-    padding-left: 8px;
+    padding-left: 5px;
     margin-top: 0;
     padding-bottom: 15px;
 }
@@ -162,21 +159,21 @@ header {
 .proyecto_texto h3 {
     position: absolute;
     text-align: center;
-    max-width: 100%;
-    bottom: 20%;
+    width: 63%;
     color: #fff;
     font-weight:bold;
     font-size: 16px;
-    display: block;
     background-color: black;
+    bottom: 20%;
+    margin-left:50%;
+    transform:translateX(-50%);
+}
     /*Ah ok, in that case you don't want to text-align:center; (which occurs within the element) 
     you want to center the element itself. Firstly go back to max-width to get the black
      background the right size again.Then add margin-left:50%; which will move it left halfway 
      across the screen, and transform:translateX(-50%); which pulls it back by half its own 
      width, so it ends up centered.*/
-    margin-left:50%;
-    transform:translateX(-50%);
-}
+    
 
 
 
@@ -209,18 +206,6 @@ header {
     bottom: 10%;
     margin-left:50%;
     transform:translateX(-50%);
-    /*
-    position: absolute;
-    width: 40%;
-    bottom: 10%;
-    background-color: #C83E24;
-    border-radius: 5%;
-    font-size: 16px;
-    font-weight:900;
-    min-height: 30px;
-    margin-left:50%;
-    transform:translateX(-50%);
-    */
 }
 
 .proyecto_texto button:hover {
@@ -236,6 +221,13 @@ header {
 
 
 /* PÁGINAS DE LOS PROYECTOS*/
+
+.carrusel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
 
 .texto-proyecto-individual {
     font-size: 16px;
@@ -340,6 +332,14 @@ footer img {
 /* para tablets*/
 @media (min-width: 576px) {
 
+    .logo {
+        width: 15%;
+    }
+
+    .marca {
+        padding-left: 20px;
+    }
+
     .encabezado {
         display: flex;
         flex-direction: row-reverse;
@@ -366,6 +366,7 @@ footer img {
     }
     .proyecto_texto h3 {
         font-size: 30px;
+        width: 57%;
     }
 
     .proyecto_texto button {
@@ -406,4 +407,22 @@ footer img {
 
 
 /*para desktop*/
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+
+    .logo {
+        width: 10%;
+    }
+
+    .marca #titulo {
+    font-size: 55px;    
+
+}
+
+    .marca #slogan {
+    font-size: 30px;
+}
+
+.proyecto_texto h3 {
+    font-size: 35px;
+    width: 35%;
+}
