@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 /* Primero hago los estilos para mobile acá*/
+
+
 html {
-    overflow:scroll;
+    overflow-y:scroll;
 }
 
 body {
@@ -10,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif; 
+    
 }
 
 #titulo {
@@ -145,6 +148,7 @@ header {
 
 
 /*PROYECTOS INDIVIDUALES*/
+
 .proyecto {
     padding-top: 20px;
     position: relative;
@@ -175,8 +179,8 @@ header {
      width, so it ends up centered.*/
     
 
-
-
+ 
+    
 .proyecto_texto button {
     -moz-box-shadow: inset 0px 1px 0px 0px #cf866c;
     -webkit-box-shadow: inset 0px 1px 0px 0px #cf866c;
@@ -219,18 +223,106 @@ header {
     background-color: #bc3315;
 }
 
+/*FOOTER*/
 
-/* PÁGINAS DE LOS PROYECTOS*/
+footer {
+    background-color: #FCFCF4;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer img {
+
+    padding-top: 40px;
+    width: 35px;
+}
+
+
+
+/* ------------------PÁGINAS DE LOS PROYECTOS----------------------------------------*/
+
+/*CARRUSEL*/
 
 .carrusel {
     position: relative;
-    height: 600px;
+    height: 200px;
     width: 80%;
     margin: 0 auto;
 }
 
+.carrusel__imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel__track-container {
+    background: lightgreen;
+    height: 100%;
+    position: relative;
+}
+
+.carrusel__pista {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carrusel__diapositiva {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*esto es el div*/
+.carrusel__boton {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+/*esto es la imagen dentro del div*/
+.carrusel__boton img {
+    height: 20px;
+}
+
+.carrusel__boton--izquierda{
+    left: -25px;
+}
+
+.carrusel__boton--derecha{
+    right: -25px;
+}
+
+.carrusel__nav {
+    display: flex; 
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carrusel__indicador {
+    border: 0;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgba(0,0,0,0.4);
+    margin: 0 8px;
+}
+
+.carrusel__indicador.diapo-actual {
+    background: rgba(0,0,0,0.75);
+}
+
+
+/*TEXTO PROYECTO INDIVIDUAL*/
+
 .texto-proyecto-individual {
     font-size: 16px;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
@@ -286,21 +378,6 @@ table, th, td {
 
 
 
-/*FOOTER*/
-
-footer {
-    background-color: #FCFCF4;
-    text-align: center;
-    padding-top: 20px;
-}
-
-footer img {
-
-    padding-top: 40px;
-    width: 35px;
-}
-
-
 /*-------------------PÁGINA "MARCO LEGAL"---------------------------------------------*/
 
 .texto {
@@ -327,7 +404,7 @@ footer img {
     max-width: 90%;
 }
 
-/*----------3 breakpoints, 2 media queries---------------------------*/
+/*--------------------------3 breakpoints, 2 media queries----------------------------------*/
 
 /* para tablets*/
 @media (min-width: 576px) {
@@ -401,10 +478,12 @@ footer img {
         text-align: center;
     }
 
-    
-    
-}
+    .carrusel {
+        height: 400px;
+    }
 
+
+}
 
 /*para desktop*/
 @media (min-width: 992px) {
@@ -414,15 +493,20 @@ footer img {
     }
 
     .marca #titulo {
-    font-size: 55px;    
-
-}
+    font-size: 45px;    
+    }
 
     .marca #slogan {
     font-size: 30px;
-}
+    }
 
-.proyecto_texto h3 {
+    .proyecto_texto h3 {
     font-size: 35px;
     width: 35%;
+    }
+
+    .carrusel {
+        height: 600px;
+    }
+
 }
