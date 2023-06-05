@@ -257,7 +257,6 @@ footer img {
 }
 
 .carrusel__track-container {
-    background: lightgreen;
     height: 100%;
     position: relative;
 }
@@ -342,6 +341,7 @@ footer img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .mapa iframe {
@@ -457,8 +457,8 @@ table, th, td {
 
     .mapa iframe {
         padding-top: 15px;
-        width: 50%;
-        height: 500px;
+        width: 60%;
+        height: 400px;
     }
 
     .video-proyecto iframe {
@@ -504,6 +504,12 @@ table, th, td {
     font-size: 35px;
     width: 35%;
     }
+
+    .mapa iframe {
+        width: 60%;
+        height: 550px;
+    }
+
 
     .carrusel {
         height: 600px;
