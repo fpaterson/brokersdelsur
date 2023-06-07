@@ -142,11 +142,6 @@ header {
     color: white;
 }
 
-#encanto {
-    font-style: italic;
-}
-
-
 /*PROYECTOS INDIVIDUALES*/
 
 .proyecto {
@@ -259,12 +254,16 @@ footer img {
 .carrusel__track-container {
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carrusel__pista {
     padding: 0;
     margin: 0;
     list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
 }
 
 .carrusel__diapositiva {
@@ -310,6 +309,7 @@ footer img {
     height: 10px;
     background: rgba(0,0,0,0.4);
     margin: 0 8px;
+    cursor: pointer;
 }
 
 .carrusel__indicador.diapo-actual {
@@ -423,6 +423,14 @@ table, th, td {
     }
 
     /*tengo que estudiar qué hace esto*/
+
+    /* flex: 1: This is a shorthand property for setting the flex-grow, 
+    flex-shrink, and flex-basis properties. It sets flex-grow to 1,
+    which means the element can grow and take up available space if
+    there is any; it sets flex-shrink to 1, which means the element 
+    can shrink if there is not enough space available; and it
+    sets flex-basis to 0%, which means the initial width or 
+    height of the element is 0. */
     .iconos,
     .barra {
         flex: 1;       
