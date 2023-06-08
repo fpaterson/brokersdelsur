@@ -28,16 +28,33 @@ const actualizarPuntos = (puntoActual, targetPunto) => {
     targetPunto.classList.add('diapo-actual');
 }
 
+const controlarFlechas = (diapositivas, botonAtras, botonAdelante, targetIndice) =>{
+    if (targetIndice === 0) {
+        botonAtras.classList.add('is-hidden');
+        botonAdelante.classList.remove('is-hidden');
+    }
+    else if (targetIndice === diapositivas.length -1) {//porque es un array hay que -1
+        botonAtras.classList.remove('is-hidden');
+        botonAdelante.classList.add('is-hidden');    
+    }
+    else {
+        botonAdelante.classList.remove('is-hidden');
+        botonAtras.classList.remove('is-hidden');
+    }
+}
+
 //cuando clickeo hacia la izquierda se mueve la diapositiva hacia allá
 botonAtras.addEventListener('click', e => {
     const diapoActual = pista.querySelector('.diapo-actual');
     const anteriorDiapo = diapoActual.previousElementSibling;
     const puntoActual = puntosNav.querySelector('.diapo-actual');
     const previoBoton = puntoActual.previousElementSibling;
+    const anteriorIndice = diapositivas.findIndex(diapositiva => diapositiva === anteriorDiapo);
     
     
     moverADiapo(pista, diapoActual, anteriorDiapo);
     actualizarPuntos(puntoActual, previoBoton);
+    controlarFlechas(diapositivas, botonAtras, botonAdelante, anteriorIndice);
 })
 
 
@@ -47,10 +64,12 @@ botonAdelante.addEventListener('click', e => {
     const proximaDiapo = diapoActual.nextElementSibling;
     const puntoActual = puntosNav.querySelector('.diapo-actual');
     const proximoBoton = puntoActual.nextElementSibling;
+    const proximoIndice = diapositivas.findIndex(diapositiva => diapositiva === proximaDiapo);
 
     //moverse a la proxima diapo
     moverADiapo(pista, diapoActual, proximaDiapo);
     actualizarPuntos(puntoActual, proximoBoton);
+    controlarFlechas(diapositivas, botonAtras, botonAdelante, proximoIndice);
 })
 
 //cuando se clickea en un punto del nav, se mueve a esa diapo
@@ -67,8 +86,10 @@ puntosNav.addEventListener('click', e => {
 
     moverADiapo(pista, diapoActual, targetDiapo);
     actualizarPuntos(puntoActual, targetPunto);
+    controlarFlechas(diapositivas, botonAtras, botonAdelante, targetIndice);
 
 })
+
     
 
 

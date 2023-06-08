@@ -316,6 +316,10 @@ footer img {
     background: rgba(0,0,0,0.75);
 }
 
+.is-hidden {
+    display: none;
+}
+
 
 /*TEXTO PROYECTO INDIVIDUAL*/
 
