@@ -500,6 +500,7 @@ table, th, td {
 /*para desktop*/
 @media (min-width: 992px) {
 
+
     .logo {
         width: 10%;
     }
@@ -527,6 +528,14 @@ table, th, td {
         height: 600px;
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .texto-proyecto-individual{
+        max-width: fit-content;
+        padding-right: 80px;
+        padding-left: 80px;
+        overflow: hidden;
+       
     }
 
 }
