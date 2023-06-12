@@ -5,6 +5,8 @@
 
 html {
     overflow-y:scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -217,6 +219,97 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b', GradientType=0);
     background-color: #bc3315;
 }
+
+
+
+
+/* FORMULARIO*/
+
+.texto-formulario{
+    background-color: #1E480D;
+    width: 100%;
+    height: 60px;
+}
+
+.texto-formulario p {
+    color: #FCFCF4;
+    font-size: 16px;
+    text-align: center;
+    font-weight:400;
+    padding-top: 8px;
+}
+
+.imagen-fondo {
+    position: relative;
+    background-image: url('Imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+
+.formulario {
+    top: 25px;
+    position: absolute;
+    width: 250px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.6);
+    margin-left:50%;
+    transform:translateX(-50%);
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 5px;
+}  
+
+/* form {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* padding: 2px; */
+    /* border: 2px solid #ccc;
+    border-radius: 5px;  
+    margin-left:50%;
+    transform:translateX(-50%);
+  } */
+
+
+
+/* .contacto {
+    position: relative;
+    display: flex;
+    flex-direction: column;  
+} */
+
+/* .formulario_background{
+    position: relative;
+    display: block;
+    background: url(Imagenes/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    width: 100%;
+    height:300px; 
+    position: relative;
+    display: inline-block;
+} */
+    
+
+
+
+/* .control {
+
+    width: 300px;
+} */
+
+
+
+
+
+
+
 
 /*FOOTER*/
 
@@ -537,5 +630,35 @@ table, th, td {
         overflow: hidden;
        
     }
+
+    .contacto {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .texto-formulario p {
+        padding-top: 8px;
+        font-size: 25px;
+    }
+
+    .formulario {
+        /* background-image: url('Imagenes/fondo.jpg');
+        background-size: cover;
+        background-position: center; */
+        height: 60vh;
+        /* display: flex; */
+        /* align-items: center; */
+       
+    }
+    
+
+    
+      input,
+    textarea {
+      width: 90%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
 
 }
