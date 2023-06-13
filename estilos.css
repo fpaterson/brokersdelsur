@@ -544,7 +544,7 @@ table, th, td {
 
 
     .imagen-fondo {
-        height: 260px;
+        height: 300px;
     }
     
     .formulario {  
@@ -626,11 +626,11 @@ table, th, td {
     }
 
     .imagen-fondo {
-        height: 400px;
+        height: 500px;
     }
     
     .formulario {  
-        top: 55px;
+        top: 65px;
         width: 700px;
         text-align: center;
        
