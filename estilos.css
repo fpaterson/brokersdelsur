@@ -270,11 +270,12 @@ footer {
     background-color: #FCFCF4;
     text-align: center;
     padding-top: 20px;
+    margin-top: 20px;
 }
 
 footer img {
 
-    padding-top: 40px;
+    padding-top: 25px;
     width: 35px;
 }
 
