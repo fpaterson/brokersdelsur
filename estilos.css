@@ -562,6 +562,10 @@ table, th, td {
         font-size: 25px;
     }
 
+    .texto-proyecto-individual h2 {
+        font-size: 35px;
+    }
+
     .mapa iframe {
         padding-top: 15px;
         width: 60%;
@@ -646,6 +650,10 @@ table, th, td {
        
     }
 
+    .texto-proyecto-individual h2 {
+        font-size: 50px;
+    }
+
     .contacto {
         width: 100vw;
         height: 100vh;
@@ -691,20 +699,6 @@ table, th, td {
        
     }
     
-    /* .formulario {
-        top: 25px;
-        position: absolute;
-        width: 250px;
-        padding: 16px;
-        background-color: rgba(255, 255, 255, 0.6);
-        margin-left:50%;
-        transform:translateX(-50%);
-    }
-    
-    input,
-    textarea {
-      width: 100%;
-      border-radius: 5px;
-    }   */
+
 
 }
