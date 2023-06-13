@@ -264,6 +264,10 @@ textarea {
   border-radius: 5px;
 }  
 
+.control {
+    margin-bottom: 4px;
+}
+
 /*FOOTER*/
 
 footer {
@@ -551,6 +555,10 @@ table, th, td {
         width: 350px;
     }
 
+    .control {
+        margin-bottom: 8px;
+    }
+
 
 }
 
@@ -617,6 +625,10 @@ table, th, td {
 
     textarea {
         height: 100px;
+    }
+
+    .control {
+        margin-bottom: 16px;
     }
 
     #enviar {
