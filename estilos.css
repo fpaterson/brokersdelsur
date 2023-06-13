@@ -410,6 +410,7 @@ footer img {
 .video-proyecto iframe {
     width: 93%;
     height: 300px;
+    border-radius: 10px;
 }
 
 table {
