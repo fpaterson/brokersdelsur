@@ -427,6 +427,10 @@ footer img {
     width: 93%;
 }
 
+.texto-proyecto-individual h2{
+    font-size: 30px;
+}
+
 .texto-proyecto-individual h2, h3 {
     text-align: center;
 }
@@ -564,7 +568,7 @@ table, th, td {
     }
 
     .texto-proyecto-individual h2 {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .mapa iframe {
