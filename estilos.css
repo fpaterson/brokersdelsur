@@ -546,6 +546,10 @@ table, th, td {
         text-align: end;
     }
 
+    .slogan {
+        height: 390px;  
+    }
+
     .slogan h2{
         font-size: 50px;
     }
