@@ -575,6 +575,10 @@ table, th, td {
         font-size: 40px;
     }
 
+    .carrusel {
+        margin-top: 20px;
+    }
+
     .mapa {
         margin-top: 40px;
     }
@@ -592,7 +596,7 @@ table, th, td {
     .video-proyecto iframe {
         padding-top: 15px;
         width: 70%;
-        height: 500px;
+        
     }
 
     table {
