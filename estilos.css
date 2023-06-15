@@ -571,6 +571,11 @@ table, th, td {
         font-size: 25px;
     }
 
+    .texto-proyecto-individual{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .texto-proyecto-individual h2 {
         font-size: 40px;
     }
@@ -674,6 +679,12 @@ table, th, td {
 
     .texto-proyecto-individual h2 {
         font-size: 50px;
+    }
+
+    .video-proyecto iframe {
+        width: 50%;
+        height:400px;
+        border-radius: 10px;
     }
 
     .contacto {
