@@ -122,7 +122,7 @@ header {
 }
 
 .slogan h1{
-    font-size: 5vh;
+    font-size: 40px;
     padding-top: 10px;
 }
 
@@ -576,6 +576,11 @@ table, th, td {
         padding-left: 20px;
     }
 
+    .slogan h1{
+        font-size: 60px;
+    }
+
+
     .encabezado {
         display: flex;
         flex-direction: row-reverse;
@@ -720,7 +725,7 @@ table, th, td {
 @media (min-width: 992px) {
 
     .slogan h1{
-        font-size: 60px;
+        font-size: 70px;
     }
 
     h2 {
