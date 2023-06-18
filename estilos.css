@@ -17,6 +17,11 @@ body {
     
 }
 
+h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
 #titulo {
     text-align: center;
 }
@@ -516,7 +521,7 @@ table, th, td {
     display: flex;
     width: 100%;
     height: auto;
-    
+    margin-top: 20px;
 }
 
 .texto-proyecto-historico{
@@ -524,9 +529,16 @@ table, th, td {
     flex-direction: column;
     width: 50%;
     text-align: center;
-    font-size: 16px;
     background-color: #FCFCF4;
     justify-content: center;  
+}
+
+.texto-proyecto-historico h2 {
+    font-size: 17px;
+}
+
+.texto-proyecto-historico h3 {
+    font-size: 16px;
 }
 
 .texto-proyecto-historico button {
@@ -545,10 +557,16 @@ table, th, td {
 
 
 
+
+
 /*--------------------------3 breakpoints, 2 media queries----------------------------------*/
 
 /* para tablets*/
 @media (min-width: 576px) {
+
+    h2 {
+        font-size: 40px;
+    }
 
     .logo {
         width: 15%;
@@ -689,7 +707,14 @@ table, th, td {
 /*para desktop*/
 @media (min-width: 992px) {
 
+    .slogan h1{
+        font-size: 60px;
+    }
 
+    h2 {
+        font-size: 50px;
+    }
+    
     .logo {
         width: 10%;
     }
@@ -782,12 +807,16 @@ table, th, td {
        
     }
 
+    .nuestros-proyectos h3 {
+        font-size: 25px;
+    }
+
     .texto-proyecto-historico {
         margin: 25px 12.5px 25px 25px;  
         font-size: 22px;  
     }
     
-    .foto-proyecto-historico{
+    .foto-proyecto-historico {
        margin: 25px 25px 25px 12.5px;
     }
     
