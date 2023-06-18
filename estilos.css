@@ -508,6 +508,38 @@ table, th, td {
     max-width: 90%;
 }
 
+
+
+/* NUESTROS PROYECTOS*/
+
+.proyecto-historico {
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+
+.texto-proyecto-historico{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    font-size: 16px;
+    background-color: #FCFCF4;
+    justify-content: center;
+    
+}
+
+.foto-proyecto-historico{
+    width: 50%;
+}
+
+.foto-proyecto-historico img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /*--------------------------3 breakpoints, 2 media queries----------------------------------*/
 
 /* para tablets*/
@@ -633,6 +665,14 @@ table, th, td {
         margin-bottom: 8px;
     }
 
+    .texto-proyecto-historico {
+        margin: 25px 12.5px 25px 25px;    
+    }
+    
+    .foto-proyecto-historico{
+       margin: 25px 25px 25px 12.5px;
+    }
+
 
 }
 
@@ -730,6 +770,14 @@ table, th, td {
         width: 700px;
         text-align: center;
        
+    }
+
+    .texto-proyecto-historico {
+        margin: 25px 12.5px 25px 25px;    
+    }
+    
+    .foto-proyecto-historico{
+       margin: 25px 25px 25px 12.5px;
     }
     
 
