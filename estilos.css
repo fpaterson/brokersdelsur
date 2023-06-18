@@ -688,8 +688,12 @@ table, th, td {
         margin-bottom: 8px;
     }
 
+    .proyecto-historico {
+        margin: 0;
+    }
+
     .texto-proyecto-historico {
-        margin: 25px 12.5px 25px 25px;   
+        margin: 12.5px 12.5px 12.5px 25px;   
         font-size: 18px;  
     }
 
@@ -698,8 +702,16 @@ table, th, td {
     }
     
     .foto-proyecto-historico{
-       margin: 25px 25px 25px 12.5px;
+       margin: 12.5px 25px 12.5px 12.5px;
     }
+
+    .texto-proyecto-historico.al-reves {
+        margin: 12.5px 25px 12.5px 12.5px;   
+    }
+
+    .foto-proyecto-historico.al-reves{
+        margin: 12.5px 12.5px 12.5px 25px;
+     }
 
 
 }
@@ -812,12 +824,12 @@ table, th, td {
     }
 
     .texto-proyecto-historico {
-        margin: 25px 12.5px 25px 25px;  
+        margin: 12.5px 12.5px 12.5px 25px;  
         font-size: 22px;  
     }
     
     .foto-proyecto-historico {
-       margin: 25px 25px 25px 12.5px;
+       margin: 12.5px 25px 12.5px 12.5px;
     }
     
 
