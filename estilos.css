@@ -702,6 +702,14 @@ table, th, td {
         font-size: 18px;  
     }
 
+    .texto-proyecto-historico h2 {
+        font-size: 25px;
+    }
+    
+    .texto-proyecto-historico h3 {
+        font-size: 18px;
+    }
+
     .texto-proyecto-historico button {
         margin-top: 50px;
     }
@@ -833,6 +841,14 @@ table, th, td {
     .texto-proyecto-historico {
         margin: 12.5px 12.5px 12.5px 25px;  
         font-size: 22px;  
+    }
+
+    .texto-proyecto-historico h2 {
+        font-size: 30px;
+    }
+    
+    .texto-proyecto-historico h3 {
+        font-size: 22px;
     }
     
     .foto-proyecto-historico {
