@@ -744,9 +744,11 @@ table, th, td {
     font-size: 30px;
     }
 
+ 
+
     .proyecto_texto h3 {
     font-size: 35px;
-    width: 35%;
+    width: auto;
     }
 
     .mapa iframe {
